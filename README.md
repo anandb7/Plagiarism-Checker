@@ -1,47 +1,62 @@
-Plagiarism Detection Tool
-Overview
-This repository contains a Python-based tool for detecting plagiarism in text documents. The tool utilizes Natural Language Processing (NLP) techniques such as TF-IDF vectorization, cosine similarity, and GPT-2 language model for analyzing textual content and identifying potential instances of plagiarism.
+# Plagiarism Detection Tool
 
-Features
-Text-based Plagiarism Detection: Detects plagiarism by comparing input text with web search results and calculating similarity scores.
-Web Search Integration: Utilizes Google Custom Search API to fetch relevant web documents for comparison.
-TF-IDF Vectorization: Converts text documents into numerical vectors to facilitate similarity computation.
-GPT-2 Language Model: Calculates perplexity and burstiness score using GPT-2 model for additional analysis.
-Requirements
-Python 3.x
-nltk
-transformers
-torch
-requests
-scikit-learn
-python-dotenv
-Setup
-Clone the repository:
+## Overview
 
-git clone https://github.com/your_username/plagiarism-detection-tool.git
-Install dependencies:
+This repository contains a Python-based tool for detecting plagiarism in text documents. The tool utilizes Natural Language Processing (NLP) techniques such as TF-IDF vectorization, cosine similarity, and the GPT-2 language model for analyzing textual content and identifying potential instances of plagiarism.
 
-pip install -r requirements.txt
-Obtain API key and search engine ID for Google Custom Search API. Refer to Google's documentation for instructions on obtaining these credentials.
+## Features
 
-Create a .env file in the root directory of the project and add your API key and search engine ID:
+- **Text-based Plagiarism Detection**: Detects plagiarism by comparing input text with web search results and calculating similarity scores.
+- **Web Search Integration**: Utilizes Google Custom Search API to fetch relevant web documents for comparison.
+- **TF-IDF Vectorization**: Converts text documents into numerical vectors to facilitate similarity computation.
+- **GPT-2 Language Model**: Calculates perplexity and burstiness scores using the GPT-2 model for additional analysis.
 
-API_KEY=your_api_key
-SEARCH_ENGINE_ID=your_search_engine_id
-Usage
-Run the script:
+## Requirements
 
-python plagiarism_detector.py
-Choose an option:
+- Python 3.x
+- nltk
+- transformers
+- torch
+- requests
+- scikit-learn
+- python-dotenv
 
-Detect plagiarism from input text.
-Detect plagiarism from a text file.
-Enter the text or the path of the text file accordingly.
+## Setup
 
-View the plagiarism detection results, including similarity percentage, web search results, perplexity, and burstiness score.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your_username/plagiarism-detection-tool.git
+    ```
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Obtain an API key and search engine ID for the Google Custom Search API. Refer to Google's documentation for instructions on obtaining these credentials.
 
-Contribution
+4. Create a `.env` file in the root directory of the project and add your API key and search engine ID:
+    ```env
+    API_KEY=your_api_key
+    SEARCH_ENGINE_ID=your_search_engine_id
+    ```
+
+## Usage
+
+1. Run the script:
+    ```bash
+    python plagiarism_detector.py
+    ```
+2. Choose an option:
+    - Detect plagiarism from input text.
+    - Detect plagiarism from a text file.
+
+3. Enter the text or the path of the text file accordingly.
+
+4. View the plagiarism detection results, including similarity percentage, web search results, perplexity, and burstiness scores.
+
+## Contribution
+
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License
+## License
+
+This project is licensed under the MIT License.
